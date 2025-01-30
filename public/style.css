@@ -1,0 +1,152 @@
+/* Basic Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #111; /* Dark background */
+    color: #eee;
+    font-family: "Trebuchet MS", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Candle Container */
+  .candles-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .candle-container {
+    margin-top: 50px;
+    position: relative;
+    width: 150px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Candle Body */
+  .candle {
+    width: 60px;
+    height: 150px;
+    background: #fff; /* White candle */
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 5px #999;
+  }
+  
+  /* Candle Flame */
+  .flame {
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle at 50% 50%, 
+      #ffb400 0%, 
+      #ff6900 60%, 
+      rgba(255, 0, 0, 0) 70%
+    );
+    border-radius: 50% 50% 50% 0;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    animation: flicker 0.2s infinite alternate;
+    transform-origin: bottom center;
+  }
+  
+  /* Flicker animation for the flame */
+  @keyframes flicker {
+    from {
+      transform: scale(1) rotate(0deg);
+      opacity: 0.8;
+    }
+    to {
+      transform: scale(1.1) rotate(3deg);
+      opacity: 1;
+    }
+  }
+  
+  /* Sparks / embers around the flame */
+  .spark {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: yellow;
+    border-radius: 50%;
+    opacity: 0;
+    animation: spark-animation 1s infinite;
+  }
+  
+  .spark1 {
+    top: -20px;
+    left: 0;
+    animation-delay: 0.2s;
+  }
+  
+  .spark2 {
+    top: -25px;
+    left: 20px;
+    animation-delay: 0.4s;
+  }
+  
+  .spark3 {
+    top: -22px;
+    left: 40px;
+    animation-delay: 0.6s;
+  }
+  
+  /* Spark Animation: float up and fade out */
+  @keyframes spark-animation {
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+  }
+  
+  /* Story Container */
+  .story-container {
+    margin-top: 40px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .story-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  #story {
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  /* Images container (to hold generated images) */
+  #images img {
+    max-width: 100%;
+    border: 2px solid #444;
+    margin: 10px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Countdown */
+  .countdown-container {
+    margin-top: 30px;
+    font-size: 1.2rem;
+  }

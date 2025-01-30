@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scary Story of the Day</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="candles-row">
+    <div class="candle-container">
+      <!-- White Candle -->
+      <div class="candle">
+        <!-- Flame -->
+        <div class="flame"></div>
+        <!-- Sparks (could have multiple spark elements) -->
+        <div class="spark spark1"></div>
+        <div class="spark spark2"></div>
+        <div class="spark spark3"></div>
+      </div>
+    </div>
+    <div class="candle-container">
+      <!-- White Candle -->
+      <div class="candle">
+        <!-- Flame -->
+        <div class="flame"></div>
+        <!-- Sparks (could have multiple spark elements) -->
+        <div class="spark spark1"></div>
+        <div class="spark spark2"></div>
+        <div class="spark spark3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Story Container -->
+  <div class="story-container">
+    <h1>Scary Story of the Day</h1>
+    <h2 id="story-title"></h2>
+    <p id="story">Loading story...</p>
+    <div id="images"></div>
+  </div>
+
+  <!-- Countdown -->
+  <div class="countdown-container">
+    <p>Next story in: <span id="countdown">24:00:00</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
