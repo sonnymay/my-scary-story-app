@@ -11,10 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/vertexai": "^1.9.2",
     "axios": "^1.7.9",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "openai": "^4.81.0"
+    "openai": "^4.81.0",
+    "winston": "^3.17.0"
   }
 }

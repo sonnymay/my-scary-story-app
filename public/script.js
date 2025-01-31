@@ -38,30 +38,42 @@ async function fetchNewStory() {
     storyElement.textContent = "Fetching a new scary story...";
     imagesContainer.innerHTML = "";
 
-    // Fetch from our server's /api/story endpoint
     const response = await fetch("/api/story");
+    console.log("Response status:", response.status);
+    
     const data = await response.json();
+    console.log("Response data:", data);
 
-    if (data.story) {
-      storyElement.textContent = data.story;
-      // Display images if available
-      if (data.images && data.images.length > 0) {
-        data.images.forEach((imgUrl) => {
-          const img = document.createElement("img");
-          img.src = imgUrl;
-          imagesContainer.appendChild(img);
-        });
-      }
-    } else {
-      storyElement.textContent = "Failed to retrieve story.";
+    if (data.error) {
+      throw new Error(data.details || data.error);
+    }
+
+    if (!data.storyBody) {
+      throw new Error("Story content is missing from response");
+    }
+
+    document.getElementById("story-title").textContent = data.storyTitle;
+    storyElement.textContent = data.storyBody;
+    
+    if (data.images?.length > 0) {
+      data.images.forEach((imgUrl) => {
+        const img = document.createElement("img");
+        img.src = imgUrl;
+        img.onerror = () => {
+          console.error("Failed to load image:", imgUrl);
+          img.remove();
+        };
+        imagesContainer.appendChild(img);
+      });
     }
 
     // Set next story time = now + 24 hours
     const newNextStoryTime = Date.now() + TWENTY_FOUR_HOURS;
     localStorage.setItem("nextStoryTime", newNextStoryTime.toString());
+
   } catch (error) {
-    console.error("Error fetching story:", error);
-    storyElement.textContent = "Error fetching story.";
+    console.error("Error details:", error);
+    storyElement.textContent = "Error: " + error.message;
   }
 }
 
@@ -89,4 +101,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Update countdown every second
   setInterval(updateCountdown, 1000);
+
+  // Event listener for the refresh button
+  document.getElementById('refresh-button').addEventListener('click', fetchNewStory);
 });

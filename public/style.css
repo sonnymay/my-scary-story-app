@@ -8,13 +8,36 @@
   body {
     background-color: #111; /* Dark background */
     color: #eee;
-    font-family: "Trebuchet MS", sans-serif;
+    font-family: 'Arial', sans-serif; /* More readable base font */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
     padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #222;
+    color: #ff6600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  header h1 {
+    font-family: 'Nosifer', cursive;
+    font-size: 2.5em;
+    color: #ff6600;
+    margin-bottom: 15px;
+  }
+  
+  #countdown {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5em;
+    color: #ff6600;
+    margin-top: 5px;
   }
   
   /* Candle Container */
@@ -123,6 +146,10 @@
     margin-top: 40px;
     max-width: 600px;
     text-align: center;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   }
   
   .story-container h1 {
@@ -144,9 +171,67 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  main {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #story-title {
+    font-family: 'Nosifer', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  #story {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.8; /* Increased line height */
+    color: #ffffff; /* Pure white for maximum contrast */
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  #images {
+    margin: 30px 0;
+    clear: both; /* Prevent text overlap */
+    overflow: hidden;
+  }
+
+  #images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
+  }
   
   /* Countdown */
   .countdown-container {
     margin-top: 30px;
     font-size: 1.2rem;
+  }
+
+  #refresh-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Creepster', cursive;
+  }
+
+  #refresh-button:hover {
+    background-color: #cc5500;
   }

@@ -4,9 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Scary Story of the Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Creepster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>Scary Story of the Day</h1>
+    <div id="countdown">Next story in: <span></span></div>
+  </header>
+
   <div class="candles-row">
     <div class="candle-container">
       <!-- White Candle -->
@@ -32,18 +40,14 @@
     </div>
   </div>
 
-  <!-- Story Container -->
-  <div class="story-container">
-    <h1>Scary Story of the Day</h1>
-    <h2 id="story-title"></h2>
-    <p id="story">Loading story...</p>
-    <div id="images"></div>
-  </div>
-
-  <!-- Countdown -->
-  <div class="countdown-container">
-    <p>Next story in: <span id="countdown">24:00:00</span></p>
-  </div>
+  <main>
+    <article class="story-container">
+      <h2 id="story-title"></h2>
+      <p id="story">Loading story...</p>
+      <div id="images"></div>
+    </article>
+    <button id="refresh-button">Get New Story</button>
+  </main>
 
   <script src="script.js"></script>
 </body>

@@ -1,0 +1,59 @@
+2025-01-31T16:39:43.488Z [INFO]: Server running on port 3000
+2025-01-31T16:39:53.374Z [DEBUG]: Story Prompt:
+2025-01-31T16:39:55.355Z [DEBUG]: Chat Response:
+2025-01-31T16:39:55.355Z [DEBUG]: Image Prompt:
+2025-01-31T16:40:08.863Z [DEBUG]: Image Response:
+2025-01-31T16:48:31.304Z [INFO]: Server running on port 3000
+2025-01-31T16:48:36.172Z [INFO]: Location Prompt:
+2025-01-31T16:48:37.302Z [INFO]: Story Prompt:
+2025-01-31T16:48:39.720Z [DEBUG]: Chat Response:
+2025-01-31T16:48:39.720Z [DEBUG]: Image Prompt:
+2025-01-31T16:48:42.026Z [INFO]: Location Prompt:
+2025-01-31T16:48:42.948Z [INFO]: Story Prompt:
+2025-01-31T16:48:45.310Z [DEBUG]: Chat Response:
+2025-01-31T16:48:45.311Z [DEBUG]: Image Prompt:
+2025-01-31T16:48:50.016Z [DEBUG]: Image Response:
+2025-01-31T16:48:55.103Z [DEBUG]: Image Response:
+2025-01-31T16:55:13.123Z [INFO]: Location Prompt:
+2025-01-31T16:55:13.561Z [INFO]: Story Prompt:
+2025-01-31T16:55:15.873Z [DEBUG]: Chat Response:
+2025-01-31T16:55:15.873Z [DEBUG]: Image Prompt:
+2025-01-31T17:00:22.688Z [INFO]: Server running on port 3000
+2025-01-31T17:00:25.333Z [INFO]: Location Prompt:
+2025-01-31T17:00:26.461Z [INFO]: Story Prompt:
+2025-01-31T17:00:29.381Z [DEBUG]: Chat Response:
+2025-01-31T17:00:29.381Z [DEBUG]: Image Prompt:
+2025-01-31T17:00:41.897Z [DEBUG]: Image Response:
+2025-01-31T17:10:41.755Z [INFO]: Server running on port 3000
+2025-01-31T17:10:58.698Z [INFO]: Location Prompt:
+2025-01-31T17:10:59.770Z [INFO]: Story Prompt:
+2025-01-31T17:11:01.890Z [DEBUG]: Chat Response:
+2025-01-31T17:11:01.890Z [DEBUG]: Image Prompt:
+2025-01-31T17:11:13.508Z [DEBUG]: Image Response:
+2025-01-31T17:11:13.512Z [INFO]: Location Prompt:
+2025-01-31T17:11:14.072Z [INFO]: Story Prompt:
+2025-01-31T17:11:15.776Z [DEBUG]: Chat Response:
+2025-01-31T17:11:15.777Z [DEBUG]: Image Prompt:
+2025-01-31T17:11:28.532Z [DEBUG]: Image Response:
+2025-01-31T17:23:26.087Z [INFO]: Server running on port 3000
+2025-01-31T17:23:31.544Z [INFO]: Starting story generation process
+2025-01-31T17:23:31.545Z [DEBUG]: Location Prompt:
+2025-01-31T17:23:33.045Z [DEBUG]: Location Response Raw:
+2025-01-31T17:23:33.045Z [INFO]: Location Data:
+2025-01-31T17:23:33.046Z [INFO]: Location: New Orleans, Louisiana, Entity: The Ghost of Madame LaLaurie - Delphine LaLaurie, a prominent socialite in 19th century New Orleans, was known for her cruel treatment of her slaves. Rumors spread about the torture and killings that took place in her mansion, leading to her being dubbed as one of the most haunted figures in American history.
+2025-01-31T17:23:33.046Z [INFO]: Story Prompt:
+2025-01-31T17:23:35.715Z [DEBUG]: Chat Response:
+2025-01-31T17:23:35.716Z [DEBUG]: Story Raw Text:
+2025-01-31T17:23:35.716Z [DEBUG]: Image Prompt:
+2025-01-31T17:23:47.863Z [DEBUG]: Image Response:
+2025-01-31T17:34:16.269Z [INFO]: Server running on port 3000
+2025-01-31T17:34:24.428Z [INFO]: Starting story generation process
+2025-01-31T17:34:24.429Z [DEBUG]: Location Prompt:
+2025-01-31T17:34:25.624Z [DEBUG]: Location Response Raw:
+2025-01-31T17:34:25.625Z [INFO]: Location Data:
+2025-01-31T17:34:25.626Z [INFO]: Location: New Orleans, Louisiana, USA, Entity: The Ghost of Madame LaLaurie (Delphine LaLaurie)
+2025-01-31T17:34:25.626Z [INFO]: Story Prompt:
+2025-01-31T17:34:27.568Z [DEBUG]: Chat Response:
+2025-01-31T17:34:27.568Z [DEBUG]: Story Raw Text:
+2025-01-31T17:34:27.569Z [DEBUG]: Image Prompt:
+2025-01-31T17:34:41.954Z [DEBUG]: Image Response:
